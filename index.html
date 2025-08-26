@@ -8,40 +8,6 @@
   <style>
     html { scroll-behavior: smooth; } /* smooth scrolling */
   </style>
-  <!-- Script -->
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  const iconHamburger = document.getElementById('icon-hamburger');
-  const iconClose = document.getElementById('icon-close');
-  const links = document.querySelectorAll('.menu-link');
-
-  function toggleMenu() {
-    const isOpen = menu.classList.contains('max-h-96');
-
-    if (isOpen) {
-      menu.classList.remove('max-h-96');
-      menu.classList.add('max-h-0');
-    } else {
-      menu.classList.remove('max-h-0');
-      menu.classList.add('max-h-96'); // adjust height if you add more links
-    }
-
-    iconHamburger.classList.toggle('hidden');
-    iconClose.classList.toggle('hidden');
-  }
-
-  btn.addEventListener('click', toggleMenu);
-
-  // Close menu when clicking a link (mobile only)
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      if (menu.classList.contains('max-h-96')) {
-        toggleMenu();
-      }
-    });
-  });
-</script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
   <!-- Navbar -->
@@ -66,9 +32,8 @@
 
     <!-- Links -->
     <div id="menu" 
-         class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out 
-                md:max-h-full md:flex md:flex-row md:space-x-6 md:static md:w-auto 
-                absolute top-16 left-0 w-full bg-white shadow md:shadow-none">
+         class="hidden flex-col space-y-2 absolute top-16 left-0 w-full bg-white shadow 
+                md:shadow-none md:flex md:flex-row md:space-x-6 md:static md:w-auto">
       <a href="#mission" class="menu-link block px-6 py-2 hover:text-blue-600">Mission</a>
       <a href="#values" class="menu-link block px-6 py-2 hover:text-blue-600">Values</a>
       <a href="#skills" class="menu-link block px-6 py-2 hover:text-blue-600">Skills</a>
@@ -78,6 +43,7 @@
     </div>
   </div>
 </nav>
+
   <!-- Hero / Intro -->
   <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6">
     <h1 class="text-5xl font-bold mb-4">Hi, I’m Hemasree Shanmugam 👋</h1>
@@ -222,5 +188,31 @@
       © 2025 Hemasree Shanmugam — Built with 💻 + ☕
     </div>
   </footer>
+  <!-- Script -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  const iconHamburger = document.getElementById('icon-hamburger');
+  const iconClose = document.getElementById('icon-close');
+  const links = document.querySelectorAll('.menu-link');
+
+  function toggleMenu() {
+    menu.classList.toggle('hidden');   // toggle visibility
+    iconHamburger.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  }
+
+  btn.addEventListener('click', toggleMenu);
+
+  // Close menu when clicking a link (mobile only)
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      if (!menu.classList.contains('hidden')) {
+        toggleMenu();
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
