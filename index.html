@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hemasree Shanmugam | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; } /* smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* smooth scrolling */
   </style>
 </head>
+
 <body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
   <!-- Navbar -->
-<nav class="fixed w-full bg-white shadow-md z-10">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <a href="#home" class="text-xl font-bold text-blue-600">Hemasree Shanmugam</a>
+  <nav class="fixed w-full bg-white shadow-md z-10">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#home" class="text-xl font-bold text-blue-600">Hemasree Shanmugam</a>
 
-    <!-- Hamburger / Close button (mobile only) -->
-    <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-      <!-- Hamburger icon -->
-      <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-      <!-- Close (X) icon -->
-      <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"/>
-      </svg>
-    </button>
+      <!-- Hamburger / Close button (mobile only) -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <!-- Hamburger icon -->
+        <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- Close (X) icon -->
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-    <!-- Links -->
-    <div id="menu" 
-  class="hidden md:flex flex-col md:flex-row md:space-x-6 
+      <!-- Links -->
+      <div id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 
          absolute md:static top-16 left-0 w-full md:w-auto 
          bg-white md:bg-transparent shadow md:shadow-none">
-      <a href="#mission" class="menu-link block px-6 py-2 hover:text-blue-600">Mission</a>
-      <a href="#values" class="menu-link block px-6 py-2 hover:text-blue-600">Values</a>
-      <a href="#skills" class="menu-link block px-6 py-2 hover:text-blue-600">Skills</a>
-      <a href="#experience" class="menu-link block px-6 py-2 hover:text-blue-600">Experience</a>
-      <a href="#education" class="menu-link block px-6 py-2 hover:text-blue-600">Education</a>
-      <a href="#contact" class="menu-link block px-6 py-2 hover:text-blue-600">Contact</a>
+        <a href="#mission" class="menu-link block px-6 py-2 hover:text-blue-600">Mission</a>
+        <a href="#values" class="menu-link block px-6 py-2 hover:text-blue-600">Values</a>
+        <a href="#skills" class="menu-link block px-6 py-2 hover:text-blue-600">Skills</a>
+        <a href="#experience" class="menu-link block px-6 py-2 hover:text-blue-600">Experience</a>
+        <a href="#education" class="menu-link block px-6 py-2 hover:text-blue-600">Education</a>
+        <a href="#playground" class="menu-link block px-6 py-2 hover:text-blue-600">Playground</a>
+        <a href="#contact" class="menu-link block px-6 py-2 hover:text-blue-600">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- Hero / Intro -->
   <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6">
     <h1 class="text-5xl font-bold mb-4">Hi, I’m Hemasree Shanmugam 👋</h1>
     <p class="text-lg text-gray-600 max-w-2xl">
-      Senior Software Engineer with a passion for building scalable products, mentoring teams, 
+      Senior Software Engineer with a passion for building scalable products, mentoring teams,
       and making technology accessible.
     </p>
     <a href="#mission" class="mt-8 px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
@@ -61,7 +65,7 @@
   <section id="mission" class="max-w-4xl mx-auto px-6 py-20 text-center">
     <h2 class="text-3xl font-bold mb-4 text-gray-800">My Mission</h2>
     <p class="text-lg text-gray-600">
-      To create impactful technology solutions that improve user experience, 
+      To create impactful technology solutions that improve user experience,
       scale seamlessly, and foster collaboration within engineering teams.
     </p>
   </section>
@@ -71,10 +75,10 @@
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-8 text-gray-800">My Values</h2>
       <ul class="space-y-4 text-lg">
-        <li>💡 Continuous Learning & Growth</li>
-        <li>🤝 Collaboration & Mentorship</li>
-        <li>🚀 Building with Purpose</li>
-        <li>🌍 Making Tech Accessible</li>
+        <li>Continuous Learning & Growth</li>
+        <li>Collaboration & Mentorship</li>
+        <li>Building with Purpose</li>
+        <li>Making Tech Accessible</li>
       </ul>
     </div>
   </section>
@@ -103,7 +107,7 @@
       </div>
     </div>
     <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Tech Stack</h2>
+      <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Tech Stack</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div class="p-4 bg-gray-100 shadow rounded-lg">React</div>
         <div class="p-4 bg-gray-100 shadow rounded-lg">TypeScript</div>
@@ -125,34 +129,54 @@
     <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Experience</h2>
     <div class="space-y-6">
       <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="font-semibold text-lg">Senior Software Engineer – EvidenceCare(SaaS | Product | Series B | HealthTech)</h3>
+        <h3 class="font-semibold text-lg">Senior Software Engineer – EvidenceCare(SaaS | Product | Series B |
+          HealthTech)</h3>
         <p class="text-sm text-gray-500">2022 - 2025</p>
-      <ul class="space-y-4 text-lg">
-        <li>Developed and maintained complex web applications in a product-based environment, working across multiple enterprise apps with a focus on performance scalability, and maintainability using React, TypeScript and Node.js</li>
-        <li>Implemented scalable state management with Redux Toolkit, using slices, reducers, async thunks, middleware, and selectors resulting in a 40% decrease in bugs related to state inconsistencies and better team onboarding through cleaner architecture.</li>
-        <li>Built advanced routing architecture using React Router v6, implementing features like nested routes, route based data loaders, error elements, and app level loaders to support dynamic, improving route-based data fetching reliability and reducing navigation-related errors by 25%.</li>
-        <li>Developed 25+ reusable components for a private shared component library system used across all company products, using Styled Components, Material UI, TailwindCSS, custom themes, and Storybook helping ensure brand consistency and cutting UI development time by 35%.</li>
-        <li>Diagnosed and resolved critical production issues, reducing mean time to resolution (MTTR) by 40% through proactive log monitoring, root cause analysis, and collaboration with cross-functional teams.</li>
-        <li>Delivered full-stack features end-to-end from sprint planning to production based on detailed user stories and acceptance criteria.</li>
-        <li>Designed and implemented backend services, including database schemas, migrations, secured API routes, and controller logic, improving data access reliability and maintainability.</li>
-        <li>Collaborated with cross-functional teams including product owners, architects, and QA to ensure high-quality deliverables aligned with business goals.</li>
-      </ul>
+        <ul class="space-y-4 text-lg">
+          <li>Developed and maintained complex web applications in a product-based environment, working across multiple
+            enterprise apps with a focus on performance scalability, and maintainability using React, TypeScript and
+            Node.js</li>
+          <li>Implemented scalable state management with Redux Toolkit, using slices, reducers, async thunks,
+            middleware, and selectors resulting in a 40% decrease in bugs related to state inconsistencies and better
+            team onboarding through cleaner architecture.</li>
+          <li>Built advanced routing architecture using React Router v6, implementing features like nested routes, route
+            based data loaders, error elements, and app level loaders to support dynamic, improving route-based data
+            fetching reliability and reducing navigation-related errors by 25%.</li>
+          <li>Developed 25+ reusable components for a private shared component library system used across all company
+            products, using Styled Components, Material UI, TailwindCSS, custom themes, and Storybook helping ensure
+            brand consistency and cutting UI development time by 35%.</li>
+          <li>Diagnosed and resolved critical production issues, reducing mean time to resolution (MTTR) by 40% through
+            proactive log monitoring, root cause analysis, and collaboration with cross-functional teams.</li>
+          <li>Delivered full-stack features end-to-end from sprint planning to production based on detailed user stories
+            and acceptance criteria.</li>
+          <li>Designed and implemented backend services, including database schemas, migrations, secured API routes, and
+            controller logic, improving data access reliability and maintainability.</li>
+          <li>Collaborated with cross-functional teams including product owners, architects, and QA to ensure
+            high-quality deliverables aligned with business goals.</li>
+        </ul>
       </div>
       <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="font-semibold text-lg">Software Engineer – The Mosaic Company</h3>
         <p class="text-sm text-gray-500">2015 – 2021</p>
         <ul class="space-y-4 text-lg">
-          <li>Developed responsive web applications and SPAs using React and JavaScript frameworks, delivering tailored solutions across multiple client environments.</li>
-          <li>Built custom knowledge portals and onboarding platforms, boosting internal engagement and reducing employee ramp-up time.</li>
-          <li>Refactored and modernized legacy codebases, improving performance, maintainability, and cross-browser compatibility across enterprise systems.</li>
-          <li>Partnered with project managers and client stakeholders to define technical milestones, ensuring on-time delivery of high-visibility projects..</li>
-          <li>Adapted to diverse tech stacks and business domains, providing subject matter expertise and frontend leadership on cross-functional teams.</li>
+          <li>Developed responsive web applications and SPAs using React and JavaScript frameworks, delivering tailored
+            solutions across multiple client environments.</li>
+          <li>Built custom knowledge portals and onboarding platforms, boosting internal engagement and reducing
+            employee ramp-up time.</li>
+          <li>Refactored and modernized legacy codebases, improving performance, maintainability, and cross-browser
+            compatibility across enterprise systems.</li>
+          <li>Partnered with project managers and client stakeholders to define technical milestones, ensuring on-time
+            delivery of high-visibility projects..</li>
+          <li>Adapted to diverse tech stacks and business domains, providing subject matter expertise and frontend
+            leadership on cross-functional teams.</li>
         </ul>
       </div>
-    <div class="bg-white p-6 rounded-lg shadow">
+      <div class="bg-white p-6 rounded-lg shadow">
         <h3 class="font-semibold text-lg">Systems Engineer – Infosys Ltd</h3>
         <p class="text-sm text-gray-500">2009 – 2013</p>
-        <p>Worked on web-based enterprise solutions using ASP.NET, C#, and SharePoint for Fortune 500 clients. Collaborated with global teams to deliver scalable, client-specific functionality. Contributed to code reviews, testing, and knowledge sharing.</p>
+        <p>Worked on web-based enterprise solutions using ASP.NET, C#, and SharePoint for Fortune 500 clients.
+          Collaborated with global teams to deliver scalable, client-specific functionality. Contributed to code
+          reviews, testing, and knowledge sharing.</p>
       </div>
     </div>
   </section>
@@ -168,12 +192,53 @@
     </div>
   </section>
 
+  <!-- Playground Section -->
+  <section id="playground" class="px-8 py-16 bg-gray-50 font-['Roboto',sans-serif]">
+    <h2 class="text-center text-3xl mb-8 text-gray-800 font-semibold">
+      Playground
+    </h2>
+    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+      <!-- Project Card -->
+      <div
+        class="bg-white rounded-xl shadow-md w-72 h-70 p-6 flex flex-col justify-between transition-transform duration-200 ease-in-out hover:scale-105">
+        <div>
+        <h3 class="text-lg font-semibold mb-2">Activity Indicator</h3>
+        <p class="text-gray-600">
+          A reusable React UI component for handling loading, error, empty, and idle states. Built with TypeScript,
+          Vite, Storybook, and Material UI.
+        </p>
+        </div>
+        <div class="mt-4">
+          <a href="https://shemasree.github.io/activity-indicator/" target="_blank"
+            class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
+            View on Storybook
+          </a>
+        </div>
+      </div>
+      <!-- Project Card -->
+      <div
+        class="bg-white rounded-xl shadow-md w-72 h-70 p-6 flex flex-col justify-between transition-transform duration-200 ease-in-out hover:scale-105">
+        <div>
+        <h3 class="text-lg font-semibold mb-2">Event Finder</h3>
+        <p class="text-gray-600">
+          Simple seattle event finder react app. Built with TypeScript, Vite, TailwindCSS.
+        </p>
+        </div>
+        <div class="mt-4">
+        <a href="https://seattle-event-finder.vercel.app/" target="_blank"
+          class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
+          Demo
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section id="contact" class="max-w-4xl mx-auto px-6 py-20 text-center">
     <h2 class="text-3xl font-bold mb-6 text-gray-800">Let’s Connect</h2>
     <p class="text-lg text-gray-600 mb-6">Open to new opportunities and collaborations.</p>
-    <a href="mailto:hemasree88@gmail.com" 
-       class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
+    <a href="mailto:hemasree88@gmail.com" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
       Email Me
     </a>
     <div class="mt-6 flex justify-center space-x-6">
@@ -189,30 +254,31 @@
     </div>
   </footer>
   <!-- Script -->
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  const iconHamburger = document.getElementById('icon-hamburger');
-  const iconClose = document.getElementById('icon-close');
-  const links = document.querySelectorAll('.menu-link');
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const iconHamburger = document.getElementById('icon-hamburger');
+    const iconClose = document.getElementById('icon-close');
+    const links = document.querySelectorAll('.menu-link');
 
-  function toggleMenu() {
-    menu.classList.toggle('hidden');   // toggle visibility
-    iconHamburger.classList.toggle('hidden');
-    iconClose.classList.toggle('hidden');
-  }
+    function toggleMenu() {
+      menu.classList.toggle('hidden');   // toggle visibility
+      iconHamburger.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    }
 
-  btn.addEventListener('click', toggleMenu);
+    btn.addEventListener('click', toggleMenu);
 
-  // Close menu when clicking a link (mobile only)
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      if (!menu.classList.contains('hidden')) {
-        toggleMenu();
-      }
+    // Close menu when clicking a link (mobile only)
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        if (!menu.classList.contains('hidden')) {
+          toggleMenu();
+        }
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
+
 </html>
